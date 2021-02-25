@@ -1,3 +1,4 @@
+mod encode;
 fn main() {
-    println!("Hello, world!");
+    encode::encode_img();
 }
