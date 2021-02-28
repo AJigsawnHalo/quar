@@ -18,5 +18,6 @@ quar decode -i /path/to/QR/image.png
 To decode to a file:
 ```
 quar decode -i /path/to/QR/image.png -o /path/to/file.txt
+```
 ## License
 Quar is licensed under the [MIT License](https://github.com/AJigsawnHalo/quar/blob/main/LICENSE)
