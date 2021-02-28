@@ -4,6 +4,10 @@ version = "0.1.0"
 authors = ["Joash Christian Liwanag <nightlock0326@gmail.com>"]
 edition = "2018"
 description = "A basic QR code reader and encoder program for the terminal."
+repository = "https://github.com/AJigsawnHalo/quar"
+readme = "README.md"
+license = "MIT"
+keywords = ["qr-code", "qr-code-reader", "qr-code-encoder"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
