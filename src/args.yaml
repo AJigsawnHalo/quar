@@ -1,6 +1,6 @@
 name: quar
 version: 0.1.0
-about: A QR code reader and encoder program
+about: A basic QR code reader and encoder for the terminal.
 author: Joash Christian L <nightlock0326@gmail.com>
 
 settings: 
