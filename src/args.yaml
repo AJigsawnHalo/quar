@@ -1,0 +1,31 @@
+name: quar
+version: 0.1.0
+about: A QR code reader and encoder program
+author: Joash Christian L <nightlock0326@gmail.com>
+
+settings: 
+  - ArgRequiredElseHelp
+
+subcommands:
+  - decode:
+      about: Read a QR code from an image.
+      args:
+        - input:
+            short: i
+            takes_value: true
+            about: File name for the input image to decode.
+  - encode:
+      about: Encode a QR code to an image.
+      args:
+        - input:
+            short: i 
+            takes_value: true
+            about: Input to be encoded.
+        - output:
+            short: o
+            takes_value: true
+            about: Output file name.
+        - from-file:
+            short: f 
+            takes_value: true
+            about: Reads the contents of a file then encodes it.
