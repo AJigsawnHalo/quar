@@ -14,6 +14,11 @@ subcommands:
             short: i
             takes_value: true
             about: File name for the input image to decode.
+            required: true
+        - output:
+            short: o
+            takes_value: true
+            about: Write output to a file.
   - encode:
       about: Encode a QR code to an image.
       args:
