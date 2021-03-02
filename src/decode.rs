@@ -1,7 +1,9 @@
 use image;
 use rqrr;
 use rqrr::MetaData;
-use std::fs;
+use std::fs::OpenOptions;
+use std::io::Write;
+
 fn decoder(path: String) -> (MetaData, String) {
     // Load on image to search, convert it to grayscale
     let img = image::open(path).unwrap().to_luma8();
@@ -24,5 +26,12 @@ pub fn decode_img(path: String) {
 pub fn decode_to_file(path: String, file_name: String) {
     let img_content = decoder(path);
     let content = img_content.1;
-    fs::write(file_name, content).expect("Failed to write file");
+    let mut file = OpenOptions::new()
+        .write(true)
+        .append(true)
+        .create(true)
+        .open(file_name)
+        .expect("Unable to open file.");
+
+    writeln!(file, "{}", content).expect("Unable to write file.");
 }
