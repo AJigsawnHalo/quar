@@ -8,6 +8,7 @@ settings:
 
 subcommands:
   - decode:
+      visible_aliases: [d, dec]
       about: Read a QR code from an image.
       args:
         - input:
@@ -20,6 +21,7 @@ subcommands:
             takes_value: true
             about: Write output to a file.
   - encode:
+      visible_aliases: [e, enc]
       about: Encode a QR code to an image.
       args:
         - input:
