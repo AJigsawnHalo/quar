@@ -1,5 +1,5 @@
 name: quar
-version: 0.1.1
+version: 0.2.0
 about: A basic QR code reader and encoder for the terminal.
 author: Joash Christian L <nightlock0326@gmail.com>
 
@@ -20,6 +20,9 @@ subcommands:
             short: o
             takes_value: true
             about: Write output to a file.
+        - ecc-level:
+            short: e 
+            about: Get the error correction level.
   - encode:
       visible_aliases: [e, enc]
       about: Encode a QR code to an image.
@@ -36,3 +39,7 @@ subcommands:
             short: f 
             takes_value: true
             about: Reads the contents of a file then encodes it.
+        - ecc-level:
+            short: e
+            takes_value: true
+            about: Sets the level of error correction. Accepts values from 0 to 3.
