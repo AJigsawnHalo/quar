@@ -5,9 +5,10 @@ A basic QR code reader and encoder for the terminal.
 Currently Quar only reads QR codes from an image. Camera support is planned but isn't a priority.
 
 ## Installation
-Installing Quar requires a Rust compiler and `cargo`. You can install them from [here](https://rustup.rs/).
+It is recommended to build and install Quar from source. There are binary files included in the [releases page](https://github.com/AJigsawnHalo/Quar/releases) but these are not tested to run on other systems.
 
 ### Build and Install
+Installing Quar requires a Rust compiler and `cargo`. You can install them from [here](https://rustup.rs/).
 1. Clone the repository using git or download a zip copy of the latest release from the [releases](https://github.com/AJigsawnHalo/Quar/releases)
  page.
 ```
